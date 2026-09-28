@@ -1,0 +1,25 @@
+item1_name = input("Enter first item name: ")
+item1_qty = int(input(f"Enter quantity for {item1_name}: "))
+item_price = float(input(f"Enter unit price for {item1_name}:))
+item2_name = input("\nEnter second item name: ")
+item2_qty = int(input(f"Enter quantity for {item2_name} "))
+item2_price = float(input(f"Enter unit price for  {item2_name}: "))
+deliveery_fee = float(input("\nEnter delivery fee: "))
+tax_percentage = float(input("Enter tax perccentage(e.g. 10 for 10%): "))
+subtotal1= item1_qty * item1_price
+subtotal2 = item2 * item2_price
+items_subtotal = subtotal1 + subtotal2
+tax_amount = item_suybtotal * (tax_percentage / 100)
+final_total = items_subtotal + tax_amount + deşivery_fee
+print("\n" + "="*30)
+print("PURCHASE QUOTE")
+print("="*30)
+print(f"{item1_name} ({item1_qty} x ${item1_price:.2f}): ${subtotal1:.2f}")
+print(f"{item2_name} ({item2_qty} x ${item2_price:.2f}): ${subtotal2:.2f}")
+print("-"*30)
+print(f"Items Subtotal: ${items_subtotal:.2f}")
+print(f"Tax ({tax_percentage:.1f}%): ${tax_amount:.2f")
+print(f"Delivery Fee: ${delivery_fee:.2f}")
+print("-"*30)
+print(f"Total: ${final_total:.2f}")
+print("="*30)
